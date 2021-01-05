@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 
 html, body{
     margin:0;
     padding:0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 :root{
     font-size:16px;
@@ -22,5 +23,40 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 
+}
+img[alt='coming2']{
+    width:50rem;
+    height:90vh;
+    position:absolute;
+    right:0;
+    bottom:20px;
+    transform: scale(1.2);
+}
+
+img[alt='launching']{
+    width:20rem;
+    left:0;
+    position:absolute;
+    bottom:0;
+}
+.text-wrapper{
+    animation:fade 2s infinite ease-in-out;
+}
+@keyframes fade{
+    0%,100%{
+        opacity:.1;
+    }
+    30%{
+        opacity:.3;
+    }
+    50%{
+        opacity:.5;
+    }
+    80%{
+        opacity:.7;
+    }
+}
+.text-small{
+    margin-left:-3.5rem;
 }
 @tailwind utilities;
