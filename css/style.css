@@ -609,7 +609,6 @@ body{
 img[alt='coming2']{
   width:50rem;
   height:90vh;
-  position:absolute;
   right:0;
   bottom:20px;
   transform: scale(1.2);
@@ -618,7 +617,6 @@ img[alt='coming2']{
 img[alt='launching']{
   width:20rem;
   left:0;
-  position:absolute;
   bottom:0;
 }
 
@@ -665,6 +663,23 @@ img[alt='launching']{
 
 .text-small{
   margin-left:-3.5rem;
+}
+
+@media(max-width:600px){
+  :root{
+    font-size:14px;
+  }
+
+  .text-small{
+    margin:0;
+    margin-left: 0.25rem;
+  }
+}
+
+@media(max-width:768px){
+  .text-small{
+    margin:0;
+  }
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
