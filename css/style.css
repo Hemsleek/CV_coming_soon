@@ -680,6 +680,15 @@ img[alt='launching']{
   .text-small{
     margin:0;
   }
+
+  img[alt='coming2']{
+    bottom:0;
+    /* transform: scale(1); */
+  }
+
+  img[alt='launching']{
+    /* transform: scale(1.5) */
+  }
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
